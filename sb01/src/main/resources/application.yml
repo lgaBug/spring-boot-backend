@@ -1,0 +1,14 @@
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.example.sb01.domain
+server:
+  port: 8888
+spring:
+  application:
+    name: table-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.15.250.69:3306/ui?autoReconnect=true&useSSL=false&serverTimezone=UTC
+    password: 123456
+    username: root
